@@ -6,6 +6,13 @@ import java.util.Map;
 
 public class Integers {
 
+    // Place value constants for billions, millions, thousands, hundreds, and tens
+    private static final int BILLION = 1_000_000_000;  // Constant for billion
+    private static final int MILLION = 1_000_000;      // Constant for million
+    private static final int THOUSAND = 1_000;         // Constant for thousand
+    private static final int HUNDRED = 100;            // Constant for hundred
+    private static final int TEN = 10;                 // Constant for ten   
+
     private static final BigDecimal ZERO = new BigDecimal(0);
     private static final BigDecimal TWO = new BigDecimal(2);
 
@@ -137,11 +144,6 @@ public class Integers {
         multiDigits.put(90,"ninety");
     }
 
-    private static final int BILLION = 1000000000;
-    private static final int MILLION = 1000000;
-    private static final int THOUSAND = 1000;
-    private static final int HUNDRED = 100;
-    private static final int TEN = 10;
 
     private static final String handleUnderOneThousand(int number) {
         StringBuilder builder = new StringBuilder();
